@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'groovy'
+
+repositories { mavenCentral() }
+
+dependencies { 
+	compile 'org.freemarker:freemarker:2.3.20'
+	compile 'org.apache.struts:struts2-core:2.3.15.2'
+	compile 'org.springframework:spring-webmvc:3.2.4.RELEASE'
+	testCompile 'junit:junit:4.11'
+}
+
+version = '1.0'
+
+jar { manifest.attributes provider: 'my cool company' }
