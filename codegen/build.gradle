@@ -1,16 +1,54 @@
+import org.gradle.plugins.ide.eclipse.model.Facet
+
 apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'groovy'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
 
-repositories { mavenCentral() }
+sourceCompatibility = 1.6   // 设置 JDK 版本
+webAppDirName = 'WebContent'    // 设置 WebApp 根目录
 
-dependencies { 
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+        resources {
+            srcDir 'resources'
+        }
+    }
+}
+
+// 设置 maven 库地址
+repositories { 
+	mavenCentral() // 中央库
+}
+
+// 设置依赖
+dependencies {
+	compile fileTree(dir: 'lib', include: '*.jar')
+	compile 'ojdbc:ojdbc:14'
+	compile 'commons-dbcp:commons-dbcp:1.4'
 	compile 'org.freemarker:freemarker:2.3.20'
 	compile 'org.apache.struts:struts2-core:2.3.15.2'
 	compile 'org.springframework:spring-webmvc:3.2.4.RELEASE'
-	testCompile 'junit:junit:4.11'
+	compile 'org.springframework:spring-tx:3.2.4.RELEASE'
+	compile 'org.springframework:spring-jdbc:3.2.4.RELEASE'
+	compile 'org.springframework.security:spring-security-web:3.1.4.RELEASE'
+	compile 'org.springframework.security:spring-security-config:3.1.4.RELEASE'
+	providedCompile 'javax.servlet:servlet-api:2.5' // 编译期
+	providedRuntime 'javax.servlet:jstl:1.2'    // 运行时
 }
 
-version = '1.0'
-
-jar { manifest.attributes provider: 'my cool company' }
+// 设置 Project Facets
+eclipse {
+	wtp {
+		facet {
+			facet name: 'jst.web', type: Facet.FacetType.fixed
+			facet name: 'wst.jsdt.web', type: Facet.FacetType.fixed
+			facet name: 'jst.java', type: Facet.FacetType.fixed
+			facet name: 'jst.web', version: '2.4'
+			facet name: 'jst.java', version: '1.6'
+			facet name: 'wst.jsdt.web', version: '1.0'
+		}
+	}
+}
