@@ -31,5 +31,6 @@
 	</bean>
 	
 	<bean id="customAuthenticationFilter" class="com.dh.core.security.CustomPWAuthenticationFilter" />
+	<bean id="userDetailImpl" class="com.dh.core.security.UserDetailsServiceImpl" />
 	<import resource="spring-security.xml"/>
 </beans>

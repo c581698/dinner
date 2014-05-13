@@ -1,5 +1,7 @@
 package com.dh.core.entity;
 
-public class BaseModel {
+import java.io.Serializable;
+
+public class BaseModel implements Serializable {
 
 }

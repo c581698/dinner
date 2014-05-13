@@ -16,7 +16,7 @@ Ext.define("com.tp.view<#if filePath!="">.${filePath}</#if>.${name}Form",{
 			<#if col.type == 3>
 				,xtype : 'numberfield'
 				<#if col.precision != 0>
-				,decimaPrecision:col.precision
+				,decimaPrecision:${col.precision}
 				</#if>
 			</#if>
 			<#if col.type == 93>
@@ -28,6 +28,7 @@ Ext.define("com.tp.view<#if filePath!="">.${filePath}</#if>.${name}Form",{
 				true
 			</#if>
 			<#if (col.desc)??>
+				,fieldLabel : "${col.desc}"
 				,tooltip : "${col.desc}"
 			</#if>
 			<#if (col.default)??>

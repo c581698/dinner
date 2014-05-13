@@ -3,6 +3,7 @@ package com.dh.generate
 
 import java.beans.java_awt_BorderLayout_PersistenceDelegate;
 import java.lang.ref.ReferenceQueue.Null;
+import java.security.cert.TrustAnchor;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 
@@ -19,6 +20,7 @@ class GenEngine {
 	def static webPath;
 	def static basePath;
 	def static packageName;
+	def static genServer;
 	def static pk = new HashMap();
 
 	static void main(arg){
@@ -43,7 +45,7 @@ class GenEngine {
 			def md = conn.getMetaData();
 
 			def rs;
-			def srcBase = srcPath+"/"+packageName.replace(/\./,"/");
+			def srcBase = srcPath+"/"+packageName.replaceAll(/\./,"/");
 
 			map.each {key,value ->
 				rs = md.getColumns(null, "BUDGET", key.toUpperCase(), "%");
@@ -89,20 +91,22 @@ class GenEngine {
 
 				view.process(tb, new FileWriter(file.getAbsolutePath()+"/"+tb.name+"View.js"));
 
-				file = new File(srcBase+"/entity/"+tb.filePath);
-				file.mkdirs();
-
-				entity.process(tb, new FileWriter(file.getAbsolutePath()+"/"+tb.name+".java"));
-
-				file = new File(srcBase+"/dao/"+tb.filePath);
-				file.mkdirs();
-
-				dao.process(tb, new FileWriter(file.getAbsolutePath()+"/"+tb.name+"Dao.java"));
-
-				file = new File(srcBase+"/action/"+tb.filePath);
-				file.mkdirs();
-
-				action.process(tb, new FileWriter(file.getAbsolutePath()+"/"+tb.name+"Action.java"));
+				if(genServer == true){
+					file = new File(srcBase+"/entity/"+tb.filePath);
+					file.mkdirs();
+	
+					entity.process(tb, new FileWriter(file.getAbsolutePath()+"/"+tb.name+".java"));
+	
+					file = new File(srcBase+"/dao/"+tb.filePath);
+					file.mkdirs();
+	
+					dao.process(tb, new FileWriter(file.getAbsolutePath()+"/"+tb.name+"Dao.java"));
+	
+					file = new File(srcBase+"/action/"+tb.filePath);
+					file.mkdirs();
+	
+					action.process(tb, new FileWriter(file.getAbsolutePath()+"/"+tb.name+"Action.java"));
+				}
 			}
 		}
 	}
@@ -138,6 +142,12 @@ class GenEngine {
 		dbProp.setProperty("user", props.getProperty("user"));
 		dbProp.setProperty("password", props.getProperty("password"));
 		dbProp.setProperty("remarksReporting","true");
+		
+		genServer = props.getProperty("server");
+
+		if(genServer == null){
+			genServer = true;
+		}
 
 		sql = Sql.newInstance(props.getProperty("url"), dbProp, props.getProperty("driver"));
 

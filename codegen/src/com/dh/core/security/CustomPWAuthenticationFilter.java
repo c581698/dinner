@@ -51,10 +51,10 @@ public class CustomPWAuthenticationFilter extends
 		if (null == jcaptchaCode)
 			new ValidateCodeException("验证码超时,请重新获取!").printStackTrace();
 
-		boolean b = ((Captcha) request.getSession().getAttribute(Captcha.NAME)).isCorrect(jcaptchaCode);
+		/*boolean b = ((Captcha) request.getSession().getAttribute(Captcha.NAME)).isCorrect(jcaptchaCode);
 		
 		if (!b)
-			new ValidateCodeException("验证码不正确,请重新输入!").printStackTrace();
+			new ValidateCodeException("验证码不正确,请重新输入!").printStackTrace();*/
 	}
 
 	public String obtainValidateCodeParameter(HttpServletRequest request) {

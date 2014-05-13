@@ -1,6 +1,6 @@
 <#compress>
 Ext.define("com.tp.view<#if filePath!="">.${filePath}</#if>.${name}View",{
-	extend : "com.tp.app.BaseGrid",
+	extend : "com.tp.app.BaseGridPanel",
 	requires : ["com.tp.store.${name}"],
 	title : "${name}",
 	

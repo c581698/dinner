@@ -8,43 +8,49 @@ import org.springframework.security.core.userdetails.UserDetails;
 public class LoginUser implements UserDetails {
 	protected String username;
 	protected String password;
+	protected String realName;
 	protected int enabled;
-	
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public String getPassword() {
-		return null;
+		return this.password;
 	}
 
 	@Override
 	public String getUsername() {
-		return null;
+		return this.username;
 	}
 
 	@Override
 	public boolean isAccountNonExpired() {
-		return false;
+		return this.enabled != 2;
 	}
 
 	@Override
 	public boolean isAccountNonLocked() {
-		return false;
+		return this.enabled != 3;
 	}
 
 	@Override
 	public boolean isCredentialsNonExpired() {
-		return false;
+		return true;
 	}
 
 	@Override
 	public boolean isEnabled() {
-		return false;
+		return enabled==1;
 	}
 
+	public String getRealName() {
+		return realName;
+	}
+
+	public void setRealName(String realName) {
+		this.realName = realName;
+	}
 }
