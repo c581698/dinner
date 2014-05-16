@@ -1,5 +1,6 @@
 Ext.define("com.tp.performance.model.PerIndicator",{
 	extend : "com.dh.model.TreeModel",
+	idProperty : "perIndID",
 	
 	fields : [{
 		name : 'perIndID',
@@ -14,7 +15,7 @@ Ext.define("com.tp.performance.model.PerIndicator",{
 		name : 'perIndState',	//指标状态，1、正向 2、负向
 		type : 'int'
 	},{
-		name : 'perInd',		//上级指标
+		name : 'parentId',		//上级指标
 		type : 'int'
 	},{
 		name : 'perIndScore',	//考核值
@@ -28,5 +29,11 @@ Ext.define("com.tp.performance.model.PerIndicator",{
 	},{
 		name : 'weight',		//权重
 		type : 'float'
+	},{
+		name : 'users',
+		type : 'string'
+	},{
+		name : 'description',
+		type : 'string'
 	}]
 });

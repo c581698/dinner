@@ -8,6 +8,7 @@
 
 	<link rel="stylesheet" type="text/css" href="ext-4.2.1/resources/css/ext-all.css" />
 	<script type="text/javascript" src="ext-4.2.1/ext-all-debug.js"></script>
+	<script type="text/javascript" src="ext-4.2.1/ext-lang-zh_CN.js"></script>
 	<script type="text/javascript" src="com/App.js"></script>
 
 </head>

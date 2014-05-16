@@ -1,4 +1,8 @@
 Ext.onReady(function(){
+	Ext.getDoc().on("contextmenu", function(e){   
+	    e.stopEvent();   
+	}); 
+	
 	Ext.Loader.setConfig({
 		enabled: true,
 		paths: {
@@ -14,10 +18,11 @@ Ext.onReady(function(){
 			handler : function(){
 				Ext.create("widget.window",{
 					title : '指标分类',
-					height : 400,
-					width : 300,
-					items : Ext.create("com.tp.performance.view.PerIndicatorTree",{})
-				});
+					height : 600,
+					width : 1000,
+					layout : 'fit',
+					items : Ext.create("com.tp.performance.view.PerIndicatorTree",{id:'test'})
+				}).show();
 			}
 		},{
 			text : '指标数据'
