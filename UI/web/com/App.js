@@ -6,7 +6,7 @@ Ext.onReady(function(){
 	Ext.Loader.setConfig({
 		enabled: true,
 		paths: {
-			'Ext': 'ext-4.2.1',
+			'Ext': 'ext-4.2.1/src',
 			'com': 'com'
 		}
 	});
@@ -21,11 +21,20 @@ Ext.onReady(function(){
 					height : 600,
 					width : 1000,
 					layout : 'fit',
-					items : Ext.create("com.tp.performance.view.PerIndicatorTree",{id:'test'})
+					items : Ext.create("com.tp.performance.view.PerIndicatorTree")
 				}).show();
 			}
 		},{
-			text : '指标数据'
+			text : '指标数据',
+			handler : function(){
+				Ext.create("widget.window",{
+					title : '指标数据',
+					height : 600,
+					width : 1000,
+					layout : 'fit',
+					items : Ext.create("com.tp.performance.view.IndicatorPanel")
+				}).show();
+			}
 		}]
 	}).show();
 });
