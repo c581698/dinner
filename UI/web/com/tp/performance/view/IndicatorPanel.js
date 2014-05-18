@@ -81,6 +81,55 @@ Ext.define("com.tp.performance.view.IndicatorPanel",{
 				xtype : 'datefield',
 				fieldLabel : '结束日期',
 				format : 'Y-m-d'
+			},{
+				xtype : 'button',
+				text : '查询',
+				margin : '2 5',	
+				iconCls : 'Zoom'
+			},{
+				xtype : 'button',
+				text : '统计',
+				margin : '2 5',	
+				iconCls : 'Textlistnumbers'
+			},{
+				xtype : 'button',
+				text : '功能',
+				margin : '2 5',				
+				iconCls : 'Action',
+				menu : {
+					maxWidth : 50,
+					items :[{
+						text : '新增',
+						width : 40,
+						iconCls : 'Add',
+						iconCls : 'Lock'
+					},{
+						text : '删除',
+						iconCls : 'Delete'
+					},{
+						text : '修改',
+						iconCls : 'Overlays'
+					}]
+				}
+			},{
+				xtype : 'button',
+				text : '状态',
+				margin : '2 5',				
+				iconCls : 'Arrowswitch',
+				menu : {
+					maxWidth : 50,
+					items :[{
+						text : '加锁',
+						width : 40,
+						iconCls : 'Lock'
+					},{
+						text : '解锁',
+						iconCls : 'Lockopen'
+					},{
+						text : '确认',
+						iconCls : 'Accept'
+					}]
+				}
 			}]
 		},{
 			xtype : 'container',
@@ -97,7 +146,7 @@ Ext.define("com.tp.performance.view.IndicatorPanel",{
 				}]
 			}]
 		}];
-		
+
 		me.callParent(arguments);
 	}
 });
