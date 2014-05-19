@@ -3,6 +3,8 @@ Ext.onReady(function(){
 	    e.stopEvent();   
 	}); 
 	
+	Ext.tip.QuickTipManager.init();
+	
 	Ext.Loader.setConfig({
 		enabled: true,
 		paths: {
