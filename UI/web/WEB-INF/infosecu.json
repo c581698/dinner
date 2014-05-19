@@ -1,0 +1,136 @@
+[{
+			indicatorId : 1,
+			title : '故障1',
+			preIndName : '客户信息丢失',
+			indData : 1,
+			indDate : '2014-2-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 2,
+			title : '故障1',
+			preIndName : '客户信息丢失',
+			indData : 2,
+			indDate : '2014-3-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 3,
+			title : '故障1',
+			preIndName : '客户信息丢失',
+			indData : 5,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 4,
+			title : '故障1',
+			preIndName : '财务系统信息丢失',
+			indData : 0,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 5,
+			title : '故障1',
+			preIndName : '财务系统信息丢失',
+			indData : 1,
+			indDate : '2014-3-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 6,
+			title : '故障5',
+			preIndName : '财务系统信息丢失',
+			indData : 3,
+			indDate : '2014-2-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 7,
+			title : '故障3',
+			preIndName : '关键业务系统服务连续中断',
+			indData : 7,
+			indDate : '2014-4-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 8,
+			title : '故障4',
+			preIndName : '关键业务系统服务连续中断',
+			indData : 5,
+			indDate : '2014-2-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 9,
+			title : '故障3',
+			preIndName : '关键业务系统服务连续中断',
+			indData : 0,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 10,
+			title : '故障2',
+			preIndName : '呼叫中心系统服务连续中断',
+			indData : 10,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 11,
+			title : '故障5',
+			preIndName : '呼叫中心系统服务连续中断',
+			indData : 1,
+			indDate : '2014-3-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 12,
+			title : '故障7',
+			preIndName : '呼叫中心系统服务连续中断',
+			indData : 1,
+			indDate : '2014-2-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 13,
+			title : '故障8',
+			preIndName : '财务系统服务连续中断',
+			indData : 1,
+			indDate : '2014-2-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 14,
+			title : '故障9',
+			preIndName : '财务系统服务连续中断',
+			indData : 1,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 15,
+			title : '故障102',
+			preIndName : '财务系统服务连续中断',
+			indData : 1,
+			indDate : '2014-5-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}]

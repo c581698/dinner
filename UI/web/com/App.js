@@ -37,6 +37,19 @@ Ext.onReady(function(){
 					items : Ext.create("com.tp.performance.view.IndicatorPanel")
 				}).show();
 			}
+		},{
+			text : '统计',
+			handler : function(){
+				Ext.create("widget.grid",{
+					title : '统计',
+					width : 1000,
+					height : 600,
+					//headerPosition : 'left',
+					columns : [{
+						text : '关键业务无故障运行率数据'
+					}]
+				});
+			}
 		}]
 	}).show();
 });

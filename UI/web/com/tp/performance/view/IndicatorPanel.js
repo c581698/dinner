@@ -1,7 +1,10 @@
 Ext.define("com.tp.performance.view.IndicatorPanel",{
 	extend : "com.dh.view.Panel",
 	layout : "border",
-	requires : ["com.tp.performance.view.PerIndicatorTree","Ext.ux.form.DateTimeField"],
+	height : 600,
+	requires : ["com.tp.performance.view.PerIndicatorTree","Ext.ux.form.DateTimeField",
+		"com.tp.performance.view.CoreBusiGrid","com.tp.performance.view.InfoSecu",
+		"com.tp.performance.view.ProjectManagement"],
 	
 	constructor : function(){
 		var me = this;
@@ -90,7 +93,19 @@ Ext.define("com.tp.performance.view.IndicatorPanel",{
 				xtype : 'button',
 				text : '统计',
 				margin : '2 5',	
-				iconCls : 'Textlistnumbers'
+				iconCls : 'Textlistnumbers',
+				menu : {
+					items : [{
+						text : '按年份',
+						iconCls : 'Year'
+					},{
+						text : '按月份',
+						iconCls : 'Month'
+					},{
+						text : '按日期',
+						iconCls : 'Day'
+					}]
+				}
 			},{
 				xtype : 'button',
 				text : '功能',
@@ -106,9 +121,6 @@ Ext.define("com.tp.performance.view.IndicatorPanel",{
 					},{
 						text : '删除',
 						iconCls : 'Delete'
-					},{
-						text : '修改',
-						iconCls : 'Overlays'
 					}]
 				}
 			},{
@@ -138,11 +150,14 @@ Ext.define("com.tp.performance.view.IndicatorPanel",{
 			items : [{
 				xtype : 'tabpanel',
 				items : [{
-					title : '关键业务系统无故障运行率'
+					title : '关键业务系统无故障运行率',
+					xtype : 'CoreBusiGrid'
 				},{
-					title : '信息安全'
+					title : '信息安全',
+					xtype : 'InfoSecu'
 				},{
-					title : '项目管理'
+					title : '项目管理',
+					xtype : 'ProjectManagement'
 				}]
 			}]
 		}];

@@ -1,13 +1,23 @@
-Ext.define("com.tp.performance.view.CoreBusiGrid", {
+Ext.define("com.tp.performance.view.InfoSecu", {
 			extend : "com.dh.view.Grid",
 			frame : true,
-			alias: "widget.CoreBusiGrid",
+			alias: "widget.InfoSecu",
 			
 			requires : ["Ext.ux.form.DateTimeField"],
 
 			constructor : function() {
 				var me = this;
 
+				me.store = Ext.create('com.tp.performance.store.Indicator',{
+					groupField: 'preIndName'
+				});
+				
+				me.store.load({
+					params : {
+						type : 2
+					}
+				});
+				
 				me.plugins = [{
 							clicksToEdit : 1,
 							ptype : 'cellediting'
@@ -20,16 +30,6 @@ Ext.define("com.tp.performance.view.CoreBusiGrid", {
 							enableGroupingMenu : false
 						}];
 
-				me.store = Ext.create('com.tp.performance.store.Indicator',{
-					groupField: 'preIndName'
-				});
-				
-				me.store.load({
-					params : {
-						type : 1
-					}
-				});
-				
 				me.columns = [{
 					text : '故障',
 					flex : 1,
@@ -46,13 +46,13 @@ Ext.define("com.tp.performance.view.CoreBusiGrid", {
 						maxLength : 300
 					}
 				}, {
-					header : '故障时长(分钟)',
+					header : '故障次数',
 					width : 85,
 					sortable : true,
 					dataIndex : 'indData',
 					summaryType : 'sum',
 					summaryRenderer : function(value, summaryData, dataIndex) {
-						return  '(' + value + '分钟)';
+						return  '(' + value + '次)';
 					},
 					field : {
 						xtype : 'numberfield',
@@ -62,15 +62,15 @@ Ext.define("com.tp.performance.view.CoreBusiGrid", {
 					}
 				}, {
 					header : '故障发生时间',
-					width : 120,
+					width : 80,
 					sortable : true,
-					dataIndex : 'indDate'/*,
-					renderer : Ext.util.Format.dateRenderer('Y-m-d H:m:s'),
+					dataIndex : 'indDate',
+					//renderer : Ext.util.Format.dateRenderer('Y-m-d H:i:s'),
 					field : {
 						allowBlank : false,
 						format : "Y-m-d H:m:s",
 						xtype : 'datefield'
-					}*/
+					}
 				}, {
 					header : '创建者',
 					width : 75,

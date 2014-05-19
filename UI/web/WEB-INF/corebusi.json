@@ -1,0 +1,136 @@
+[{
+			indicatorId : 1,
+			title : '故障1',
+			preIndName : '财险银保通系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 2,
+			title : '故障1',
+			preIndName : '财险银保通系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 3,
+			title : '故障1',
+			preIndName : '财险银保通系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 4,
+			title : '故障1',
+			preIndName : '财险银保通系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 5,
+			title : '故障1',
+			preIndName : '财险银保通系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 6,
+			title : '故障5',
+			preIndName : '产险电销系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 7,
+			title : '故障3',
+			preIndName : '产险电销系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 8,
+			title : '故障4',
+			preIndName : '产险电销系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 9,
+			title : '故障3',
+			preIndName : '产险电销系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 10,
+			title : '故障2',
+			preIndName : '产险电销系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 11,
+			title : '故障5',
+			preIndName : '寿险规则库系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 12,
+			title : '故障7',
+			preIndName : '寿险规则库系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 13,
+			title : '故障8',
+			preIndName : '寿险规则库系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 14,
+			title : '故障9',
+			preIndName : '寿险规则库系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}, {
+			indicatorId : 15,
+			title : '故障102',
+			preIndName : '寿险规则库系统',
+			indData : 150,
+			indDate : '2014-1-7 14:33:47',
+			state : 1,
+			description : '描述',
+			creator : '测试用户'
+		}]

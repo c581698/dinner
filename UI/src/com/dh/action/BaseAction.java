@@ -10,9 +10,23 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class BaseAction extends ActionSupport {
 	public String jsonString;
-
+	
+	public int type;
+	
 	public String listIndexs(){
 		getData("indexs.json");
+		
+		return "success";
+	}
+
+	public String listIndicators(){
+		if(type == 1){
+			getData("corebusi.json");
+		}else if(type == 2){
+			getData("infosecu.json");
+		}else{
+			getData("pro.json");
+		}
 		
 		return "success";
 	}
@@ -26,4 +40,13 @@ public class BaseAction extends ActionSupport {
 			e.printStackTrace();
 		}
 	}
+
+	public int getType() {
+		return type;
+	}
+
+	public void setType(int type) {
+		this.type = type;
+	}
+	
 }
