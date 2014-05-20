@@ -30,6 +30,9 @@ Ext.define("com.tp.performance.model.PerIndicator",{
 		name : 'weight',		//权重
 		type : 'float'
 	},{
+		name : 'hours',			//服务窗口时间
+		type : 'int'
+	},{
 		name : 'users',
 		type : 'string'
 	},{

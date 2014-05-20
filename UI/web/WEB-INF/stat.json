@@ -1,0 +1,161 @@
+[{
+	statId : 1,
+	preIndName:'太平人寿关键业务系统',
+	indName : '寿险核心业务系统',
+	perIndScore : 99.9,
+	hours : 16,
+	operRate : 99.58,
+	exectime : 480,
+	days : 30,
+	downtime : 120
+},{
+	statId : 2,
+	preIndName:'太平人寿关键业务系统',
+	indName : '寿险银保通系统',
+	perIndScore : 99.9,
+	operRate : 99.77,
+	hours : 16,
+	exectime : 480,
+	days : 30,
+	downtime : 66
+},{
+	statId : 3,
+	preIndName:'太平人寿关键业务系统',
+	indName : '寿险规则库系统',
+	perIndScore : 99.9,
+	hours : 16,
+	days : 30,
+	operRate : 100,
+	exectime : 480,
+	downtime : 0
+},{
+	statId : 4,
+	preIndName:'太平人寿关键业务系统',
+	indName : '寿险外包录入系统',
+	perIndScore : 99.9,
+	hours : 16,
+	days : 30,
+	operRate : 99.65,
+	exectime : 480,
+	downtime : 100
+},{
+	statId : 5,
+	preIndName:'太平人寿立保通系统',
+	indName : '太平人寿立保通系统',
+	perIndScore : 99.75,
+	hours : 16,
+	operRate : 99.65,
+	exectime : 480,
+	days : 30,
+	downtime : 100
+},{
+	statId : 6,
+	preIndName:'太平财险关键业务系统',
+	indName : '财险核心业务系统（含立保通系统、简易出单系统）',
+	perIndScore : 99.9,
+	hours : 24,
+	operRate : 100,
+	exectime : 720,
+	days : 30,
+	downtime : 0
+},{
+	statId : 7,
+	preIndName:'太平财险关键业务系统',
+	indName : '财险银保通系统',
+	perIndScore : 99.9,
+	hours : 24,
+	days : 30,
+	operRate : 99.97,
+	exectime : 720,
+	downtime : 100
+},{
+	statId : 8,
+	preIndName:'太平财险关键业务系统',
+	indName : '财险电子商务系统',
+	perIndScore : 99.9,
+	hours : 24,
+	operRate : 99.91,
+	exectime : 720,
+	days : 30,
+	downtime : 40
+},{
+	statId : 9,
+	preIndName:'太平养老关键业务系统',
+	indName : '太平人寿立保通系统',
+	perIndScore : 99.75,
+	hours : 16,
+	operRate : 99.65,
+	exectime : 480,
+	days : 30,
+	downtime : 100
+},{
+	statId : 10,
+	preIndName:'太平养老关键业务系统',
+	indName : '团险自助投保系统',
+	perIndScore : 99.75,
+	hours : 16,
+	operRate : 100,
+	exectime : 480,
+	days : 30,
+	downtime : 0
+},{
+	statId : 11,
+	preIndName:'太平养老关键业务系统',
+	indName : '养老金核心业务系统',
+	perIndScore : 99.75,
+	hours : 16,
+	operRate : 99.58,
+	exectime : 480,
+	days : 30,
+	downtime : 120
+},{
+	statId : 12,
+	preIndName:'太平养老关键业务系统',
+	indName : '团险网上服务平台',
+	perIndScore : 99.75,
+	operRate : 99.41,
+	exectime : 480,
+	hours : 16,
+	days : 30,
+	downtime : 170
+},{
+	statId : 13,
+	preIndName:'太平养老关键业务系统',
+	indName : '养老金网上服务平台',
+	perIndScore : 99.75,
+	hours : 16,
+	operRate : 99.97,
+	exectime : 480,
+	days : 30,
+	downtime : 10
+},{
+	statId : 14,
+	preIndName:'太平电商关键业务系统',
+	indName : '产险电销系统',
+	perIndScore : 99.75,
+	operRate : 96.76,
+	exectime : 480,
+	hours : 16,
+	days : 30,
+	downtime : 170
+},{
+	statId : 15,
+	preIndName:'太平电商关键业务系统',
+	indName : '寿险电销系统',
+	perIndScore : 99.75,
+	hours : 16,
+	operRate : 99.9,
+	exectime : 480,
+	days : 30,
+	downtime : 30
+},{
+	statId : 16,
+	preIndName:'太平电商关键业务系统',
+	indName : '太平人寿立保通系统',
+	perIndScore : 99.75,
+	hours : 24,
+	operRate : 99.91,
+	exectime : 720,
+	days : 30,
+	downtime : 40
+}]

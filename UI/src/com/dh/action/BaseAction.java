@@ -18,6 +18,11 @@ public class BaseAction extends ActionSupport {
 		
 		return "success";
 	}
+	public String listStat(){
+		getData("stat.json");
+		
+		return "success";
+	}
 
 	public String listIndicators(){
 		if(type == 1){

@@ -6,6 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>UI Index Page</title>
 
+<style type="text/css">
+	.tdBackgroundColor_ {
+		background-color: red;
+	}
+</style>
+
 	<link rel="stylesheet" type="text/css" href="ext-4.2.1/resources/css/ext-all.css" />
 	<link rel="stylesheet" type="text/css" href="ext-4.2.1/resources/css/icon.css" />
 	<script type="text/javascript" src="ext-4.2.1/ext-all-debug.js"></script>

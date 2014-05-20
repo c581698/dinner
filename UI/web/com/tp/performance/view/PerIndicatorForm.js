@@ -98,6 +98,13 @@ Ext.define("com.tp.performance.view.PerIndicatorForm",{
 						name : 'warningA'
 					}]
 				},{
+					fieldLabel : '服务窗口时间',
+					name : 'hours',
+					xtype : 'numberfield',
+					maxValue : 24,
+					minValue : 1,
+					allowBlank : false
+				},{
 					fieldLabel : '说明',
 					name : 'description',
 					columnWidth : 1,
