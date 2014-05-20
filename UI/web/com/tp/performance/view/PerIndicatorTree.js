@@ -116,11 +116,13 @@ Ext.define("com.tp.performance.view.PerIndicatorTree",{
 							modal : true,
 							items : [{
 									xtype : 'form',
-									margin : 5,
+//									margin : 3,
+									padding : 4,
 									region : 'north',
 									items : [{
 										xtype : 'textfield',
 										labelWidth : 30,
+										padding : 2,
 										fieldLabel : '查询',
 										emptyText : '根据用户名查询'
 									}]
