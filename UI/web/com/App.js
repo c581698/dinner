@@ -30,7 +30,7 @@ Ext.onReady(function(){
 			text : '指标数据',
 			handler : function(){
 				Ext.create("widget.window",{
-					title : '指标数据',
+					title : '考核数据',
 					height : 600,
 					width : 1000,
 					layout : 'fit',
@@ -74,6 +74,10 @@ var store = Ext.create('com.tp.performance.store.Statistics', {
         renderTo: document.body,
         columnLines : true,
         store: store,
+        tbar : [{
+        	text : '下载',
+        	iconCls : 'Diskdownload'
+        }],
         plugins: [
         ],
         listeners: {
@@ -195,7 +199,7 @@ var store = Ext.create('com.tp.performance.store.Statistics', {
 				
 				var grid = Ext.create('Ext.grid.Panel', {
 				        width: 500,
-				        height: 200,
+				        height: 250,
 				        frame: true,
 				        titleAlign : 'center',
 				        title: '信息安全数据统计数据(2014-01 ~ 2014-04)',
@@ -204,6 +208,10 @@ var store = Ext.create('com.tp.performance.store.Statistics', {
 				        store: store,
 				        plugins: [
 				        ],
+				        tbar : [{
+				        	text : '下载',
+				        	iconCls : 'Diskdownload'
+				        }],
 				        features: [/*{
 				            id: 'group',
 				            ftype: 'groupingsummary',
@@ -255,6 +263,10 @@ var store = Ext.create('com.tp.performance.store.Statistics', {
 						title : '项目管理考核数据(2014-01 ~ 2014-05)',
 						titleAlign : 'center',
 						height : 200,
+				        tbar : [{
+				        	text : '下载',
+				        	iconCls : 'Diskdownload'
+				        }],
 						forceFit  : true,
 						store : Ext.create('Ext.data.Store',{
 							fields : ['month','data1','data2','data3','data4','data5'],

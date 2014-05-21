@@ -7,9 +7,10 @@ Ext.define("com.tp.performance.view.CoreBusiGrid", {
 
 			constructor : function() {
 				var me = this;
+				
+				me.selModel = {mode : 'MULTI'};
 
 				me.plugins = [{
-							clicksToEdit : 1,
 							ptype : 'cellediting'
 						}];
 
@@ -21,7 +22,8 @@ Ext.define("com.tp.performance.view.CoreBusiGrid", {
 						}];
 
 				me.store = Ext.create('com.tp.performance.store.Indicator',{
-					groupField: 'preIndName'
+					groupField: 'preIndName',
+					id : 'sto'
 				});
 				
 				me.store.load({
@@ -64,13 +66,13 @@ Ext.define("com.tp.performance.view.CoreBusiGrid", {
 					header : '故障发生时间',
 					width : 120,
 					sortable : true,
-					dataIndex : 'indDate'/*,
-					renderer : Ext.util.Format.dateRenderer('Y-m-d H:m:s'),
+					dataIndex : 'indDate',
+					renderer : Ext.util.Format.dateRenderer('Y-m-d H:i:s'),
 					field : {
 						allowBlank : false,
-						format : "Y-m-d H:m:s",
-						xtype : 'datefield'
-					}*/
+						format : "Y-m-d H:i:s",
+						xtype : 'datetimefield'
+					}
 				}, {
 					header : '创建者',
 					width : 75,

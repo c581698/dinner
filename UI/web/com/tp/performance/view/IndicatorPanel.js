@@ -117,10 +117,22 @@ Ext.define("com.tp.performance.view.IndicatorPanel",{
 						text : '新增',
 						width : 40,
 						iconCls : 'Add',
-						iconCls : 'Lock'
+						iconCls : 'Lock',
+						handler : function(){
+							var rec = new com.tp.performance.model.Indicator({
+									preIndName : '财险银保通系统',
+									state : 1,
+									creator : '测试用户'
+								});
+							
+							Ext.getStore('pro').insert(0,rec);
+						}
 					},{
 						text : '删除',
 						iconCls : 'Delete'
+					},{
+						text : '保存',
+						iconCls : 'Databasesave'
 					}]
 				}
 			},{
@@ -131,15 +143,14 @@ Ext.define("com.tp.performance.view.IndicatorPanel",{
 				menu : {
 					maxWidth : 50,
 					items :[{
-						text : '加锁',
-						width : 40,
-						iconCls : 'Lock'
+						text : '提交',
+						iconCls : 'Booknext'
 					},{
-						text : '解锁',
-						iconCls : 'Lockopen'
-					},{
-						text : '确认',
+						text : '确定',
 						iconCls : 'Accept'
+					},{
+						text : '退回',
+						iconCls : 'Arrowundo'
 					}]
 				}
 			}]

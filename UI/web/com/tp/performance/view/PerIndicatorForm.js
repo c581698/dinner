@@ -64,7 +64,7 @@ Ext.define("com.tp.performance.view.PerIndicatorForm",{
 					allowBlank : false,
 					items : [
 						{ boxLabel: '指标分类', name: 'perIndType', inputValue: 1 },
-            			{ boxLabel: '指标项目', name: 'perIndType', inputValue: 2 }
+            			{ boxLabel: '考核项目', name: 'perIndType', inputValue: 2 }
 					]
 				},{
 					fieldLabel : '指标状态',
@@ -146,7 +146,7 @@ Ext.define("com.tp.performance.view.PerIndicatorForm",{
 					allowBlank : false,
 					items : [
 						{ boxLabel: '指标分类', name: 'perIndType', inputValue: 1 },
-            			{ boxLabel: '指标项目', name: 'perIndType', inputValue: 2 }
+            			{ boxLabel: '考核项目', name: 'perIndType', inputValue: 2 }
 					]
 				},{
 					fieldLabel : '指标状态',
@@ -228,7 +228,7 @@ Ext.define("com.tp.performance.view.PerIndicatorForm",{
 					allowBlank : false,
 					items : [
 						{ boxLabel: '指标分类', name: 'perIndType', inputValue: 1 },
-            			{ boxLabel: '指标项目', name: 'perIndType', inputValue: 2 }
+            			{ boxLabel: '考核项目', name: 'perIndType', inputValue: 2 }
 					]
 				},{
 					fieldLabel : '指标状态',

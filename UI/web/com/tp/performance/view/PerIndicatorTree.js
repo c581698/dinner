@@ -100,7 +100,15 @@ Ext.define("com.tp.performance.view.PerIndicatorTree",{
 				}
 			},{
 				text : '删除',
-				iconCls : 'Delete'
+				iconCls : 'Delete',
+				handler : function (){
+					Ext.Msg.show({
+					    title: '操作揭示',
+					    msg: '请先清空该考核项目下的考核数据!',
+					    buttons: Ext.Msg.OK,
+					    icon: Ext.MessageBox.INFO
+					});
+				}
 			},{
 				text : '修改',
 				iconCls : 'Overlays'
