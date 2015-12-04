@@ -1,0 +1,5 @@
+#org.springsource.ide.eclipse.gradle.core.preferences.GradleProjectPreferences
+#Fri Dec 04 23:56:34 CST 2015
+build.family.org.gradle.tooling.model.eclipse.HierarchicalEclipseProject=;common;dao;padapp;service;web;webapp;
+org.springsource.ide.eclipse.gradle.linkedresources=
+org.springsource.ide.eclipse.gradle.rootprojectloc=
