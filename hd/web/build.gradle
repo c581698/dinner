@@ -1,3 +1,3 @@
-apply plugin: 'java'
-
-group = 'hd'
+dependencies{
+	compile project(':service')
+}

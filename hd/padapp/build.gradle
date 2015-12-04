@@ -1,4 +1,0 @@
-apply plugin: 'war'
-apply plugin: 'eclipse-wtp'
-
-group = 'hd'

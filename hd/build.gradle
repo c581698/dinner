@@ -11,3 +11,11 @@ allprojects{
 		mavenCentral()
 	}
 }
+configure(subprojects.findAll {it.name.contains('app')}) {
+	apply plugin: 'war'
+	apply plugin: 'eclipse-wtp'
+	
+	dependencies{
+		compile project(':web')
+	}
+}
