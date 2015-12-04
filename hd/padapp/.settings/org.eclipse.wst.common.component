@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project-modules id="moduleCoreId" project-version="2.0">
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
 	<wb-module deploy-name="padapp">
+        <dependent-module archiveName="web.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/web/web">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
 		<property name="context-root" value="padapp"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
