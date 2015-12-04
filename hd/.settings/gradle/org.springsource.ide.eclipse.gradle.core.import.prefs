@@ -1,9 +1,9 @@
 #org.springsource.ide.eclipse.gradle.core.preferences.GradleImportPreferences
-#Sat Dec 05 00:09:58 CST 2015
+#Sat Dec 05 00:54:59 CST 2015
 addResourceFilters=true
 afterTasks=afterEclipseImport;
 beforeTasks=cleanEclipse;eclipse;
 enableAfterTasks=false
 enableBeforeTasks=false
 enableDependendencyManagement=true
-projects=common;dao;padapp;service;web;webapp;
+projects=;common;dao;padapp;service;web;webapp;
