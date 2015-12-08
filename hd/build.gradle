@@ -16,6 +16,6 @@ configure(subprojects.findAll {it.name.contains('app')}) {
 	apply plugin: 'eclipse-wtp'
 	
 	dependencies{
-		compile project(':web')
+		runtime project(':web')
 	}
 }
