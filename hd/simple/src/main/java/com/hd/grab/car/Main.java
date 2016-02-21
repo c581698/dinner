@@ -47,8 +47,10 @@ public class Main {
 	static Logger LOG;
 
 	public static void main(String[] args) throws ClientProtocolException, IOException {
+		System.out.println("-".matches(CarDetailParse.VALUE_IS_NULL) );
+		
 		try {
-			initHttp();
+			/*initHttp();
 
 			// buildBrand();
 
@@ -67,7 +69,7 @@ public class Main {
 			
 			for(int i=0;i<ids.size();i++){
 				CarDetailParse.parse((i%100)==0?(i%100)+".sql":null, ids.get(i).id, i%10==0);
-			}
+			}*/
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
