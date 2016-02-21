@@ -1,0 +1,1 @@
+include 'common','dao', 'dao-read','dao-write','service','web','webapp','padapp'

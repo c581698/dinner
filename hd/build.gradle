@@ -1,0 +1,21 @@
+subprojects{
+	
+}
+allprojects{
+	apply plugin: 'java'
+	apply plugin: 'eclipse'
+	
+	group = 'hd'
+
+	repositories{
+		mavenCentral()
+	}
+}
+configure(subprojects.findAll {it.name.contains('app')}) {
+	apply plugin: 'war'
+	apply plugin: 'eclipse-wtp'
+	
+	dependencies{
+		runtime project(':web')
+	}
+}
