@@ -39,7 +39,7 @@ public class DetailParse {
 		List<TypeID> ids = new ArrayList<TypeID>(20500);
 		keys = new HashMap<Integer, Integer>(10000);
 		
-		ids=gson.fromJson(new FileReader(new File("/Users/dinner/git/dinner/hd/simple/type_id.json")), typeOfT);
+		ids=gson.fromJson(new FileReader(new File("E:\\workspace\\repo\\dinner\\hd\\simple\\type_id.json")), typeOfT);
 		
 		for(TypeID id : ids){
 			keys.put(id.id, id.id);
@@ -76,12 +76,13 @@ public class DetailParse {
 		List<ParamRoot> paramList = gson.fromJson(param, typeOfT);
 		List<ConfigRoot> configList = gson.fromJson(config, cfgType);
 		
-		for(ParamRoot p:paramList){
-			list.addAll(p.paramitems);
-		}
-		if(configList != null)
-		for(ConfigRoot c:configList){
-			list.addAll(c.configitems);
+		if(paramList != null && configList != null){
+			for(ParamRoot p:paramList){
+				list.addAll(p.paramitems);
+			}
+			for(ConfigRoot c:configList){
+				list.addAll(c.configitems);
+			}
 		}
 		
 		return list;
@@ -90,6 +91,8 @@ public class DetailParse {
 	static Map<String, Map<String, String>> getKV(List<ValueItem> list){
 		Map<String, Map<String, String>> maps = new HashMap<String, Map<String,String>>();
 		
+		if(list.isEmpty())
+			return maps;
 		ValueItem gen = list.get(0);
 		for(Value v:gen.valueitems){
 			maps.put(v.specid, new HashMap<String, String>());
