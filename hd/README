@@ -1,0 +1,4 @@
+Simply add the following to your ~/.gradle/init.gradle script:
+	gradle.beforeProject { prj ->
+	    prj.apply from: 'http://www.tellurianring.com/projects/gradle-plugins/gradle-templates/apply.groovy'
+	}
