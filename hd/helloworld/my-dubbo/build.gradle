@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+repositories {
+	maven {
+		url "/workspace/apache-maven-3.0.5/DomloadLibrary/"
+	}
+}
+
+dependencies{
+	compile 'com.alibaba:dubbo:2.5.4-SNAPSHOT','org.springframework:spring-context:4.2.5.RELEASE','com.101tec:zkclient:0.8'
+	
+
+}
